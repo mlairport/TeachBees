@@ -130,7 +130,7 @@ header{
 }
 .grid-box {
     height: 200px;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.438);
@@ -139,6 +139,7 @@ header{
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+    animation: scaleup 6s ease-in-out infinite;
 }
 .grid-box h1{
     color: whitesmoke;
@@ -150,12 +151,14 @@ header{
 }
 .webdesign{
     background: var(--gradient-2);
+    margin-top: 30px;
 }
 .marketing{
     background: var(--gradient-3);
 }
 .branding{
     background: var(--gradient-4);
+    margin-top: 30px;
 }
 .services-content{
     padding: 3rem;
@@ -172,8 +175,44 @@ header{
 .circle img {
     position: absolute;
     top:-10%;
-    left: -20%;
+    left: -10%;  
     width: 650px;
     z-index: -1;
     animation: scaleup 6s ease-in-out infinite;
+}
+
+/*Numbers*/
+.mockup-img {
+    flex-basis: 50%;
+}
+.mockup-img img{
+    max-width: 100%;
+    margin: auto 20px;
+}
+.hpycilents{
+    background: var(--gradient-1);
+}
+.prjcompleted {
+    background: var(--gradient-2);
+}
+.runningprj {
+    background: var(--gradient-3);
+}
+.designs {
+    background: var(--gradient-4);
+}
+
+
+/*Animations 动画  keyframes添加关键帧*/
+@keyframes scaleup{
+    0%{
+        transform: scale(1.2); /*在0%的时候比例放大20%*/
+    }
+    50%{
+        transform: scale(1); /*在50%的时候比例为1*/
+    }
+    100%{
+        transform: scale(1.2); /*在100%的比例放大20%*/
+    }
+    50% 
 }
