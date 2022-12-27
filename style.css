@@ -217,8 +217,6 @@ header{
     background: var(--gradient-4);
 }
 
-
-
 .numbers .grid-wrapper h2 {
     margin-top: 30px;
     color: whitesmoke;
@@ -235,9 +233,6 @@ header{
     transform: translateY(-20px);
 }
 
-
-
-
 /*Animations 动画  keyframes添加关键帧*/
 @keyframes scaleup{
     0%{
@@ -249,4 +244,30 @@ header{
     100%{
         transform: scale(1.2); /*在100%的比例放大20%*/
     }
+}
+
+/*projects*/
+.projects{
+    margin-top: 80px;
+    text-align: center;
+}
+.projects h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-images{
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit , minmax(350px,auto));;
+}
+
+.prj-img{
+    height: 300px;
+    overflow: hidden;
+}
+
+.prj-img img{
+    max-height: 100%;
 }
