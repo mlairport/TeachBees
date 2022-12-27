@@ -182,12 +182,27 @@ header{
 }
 
 /*Numbers*/
+.numbers{
+    margin-top: 100px;
+}
+.numbers .num-text{
+    font-size: 40px;
+    padding-left: 5rem;
+    padding-right: 50%;
+}
+.numbers p{
+    padding-left: 5rem;
+    padding-right: 50%;
+}
+
 .mockup-img {
     flex-basis: 50%;
 }
 .mockup-img img{
     max-width: 100%;
-    margin: auto 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.329);
+    border-radius: 10px;
 }
 .hpycilents{
     background: var(--gradient-1);
@@ -203,6 +218,26 @@ header{
 }
 
 
+
+.numbers .grid-wrapper h2 {
+    margin-top: 30px;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+}
+.numbers .grid-wrapper h1 {
+    font-size: 40px;
+}
+.numbers .grid-box{
+    transition: transform 0.5s ease-in-out;
+}
+.numbers .grid-box:hover{
+    transform: translateY(-20px);
+}
+
+
+
+
 /*Animations 动画  keyframes添加关键帧*/
 @keyframes scaleup{
     0%{
@@ -214,5 +249,4 @@ header{
     100%{
         transform: scale(1.2); /*在100%的比例放大20%*/
     }
-    50% 
 }
