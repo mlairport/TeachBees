@@ -233,18 +233,6 @@ header{
     transform: translateY(-20px);
 }
 
-/*Animations 动画  keyframes添加关键帧*/
-@keyframes scaleup{
-    0%{
-        transform: scale(1.2); /*在0%的时候比例放大20%*/
-    }
-    50%{
-        transform: scale(1); /*在50%的时候比例为1*/
-    }
-    100%{
-        transform: scale(1.2); /*在100%的比例放大20%*/
-    }
-}
 
 /*projects*/
 .projects{
@@ -266,8 +254,74 @@ header{
 .prj-img{
     height: 300px;
     overflow: hidden;
+    position: relative;
 }
 
 .prj-img img{
     max-height: 100%;
+    min-width: 100%;
+}
+.details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 105, 212, 0.392);
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+.prj-img:hover .details{
+    transform: scaleX(1);
+}
+
+.details h1,h2,i{
+    color: whitesmoke;
+}
+
+.details i {
+    font-size: 30px;
+}
+
+/*team*/
+.team{
+    margin-top: 80px;
+}
+.team h1{
+    font-size: 40px;
+    text-align: center;
+}
+.grid-wrapper {
+    background: var(--gradient-2);
+}
+.team-mem{
+    background: white;
+    height: 400px;
+}
+.team-mem img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/*Animations 动画  keyframes添加关键帧*/
+@keyframes scaleup{
+    0%{
+        transform: scale(1.2); /*在0%的时候比例放大20%*/
+    }
+    50%{
+        transform: scale(1); /*在50%的时候比例为1*/
+    }
+    100%{
+        transform: scale(1.2); /*在100%的比例放大20%*/
+    }
 }
